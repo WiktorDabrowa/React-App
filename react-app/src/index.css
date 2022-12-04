@@ -40,33 +40,36 @@ code {
 }
 .main--container{
   display:flex;
-  flex-direction: column;
+  flex-wrap:wrap;
   align-items: center;
   justify-content: center;
+  gap:20px
 }
-.travel--container {
+.task--container {
   display:flex;
-  flex-direction: row;
-  width:500px;
-  margin:20px
+  flex-direction: column;
+  width:20vw;
+  height:190px;
+  border:1px solid black;
+  border-radius:5px;
+  padding:10px;
+  justify-content: center;
+  position:relative
 }
-.travel--img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
+
+.check{
+  color:black;
+  transition: 1s;
+  position:absolute;
+  bottom:1rem;
+  right:1rem
 }
-.travel--location {
-  color:#61dafb;
+
+.check:hover {
+  color:green;
+  cursor:pointer
 }
-.travel--text {
-  margin-left:20px
-}
-.travel--link {
-  margin-left:10px;
-  text-decoration: none;
-  color:#61dafb;
-}
-.travel--link:hover{
-  text-decoration: underline ;
+
+.task--title {
+  margin-top:0
 }

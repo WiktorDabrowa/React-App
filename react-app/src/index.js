@@ -1,23 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Nav from './components/Nav'
-import Travel from './components/Travel'
-import data from './data'
+import App from './components/App'
+
 import reportWebVitals from './reportWebVitals';
 
-const travels = data.map(item => {
-  return (
-    <Travel  {...item} />
-  )
-})
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nav />
-    <div className='main--container'>
-    {travels}
-    </div>
+    <App />
   </React.StrictMode>
 );
 
